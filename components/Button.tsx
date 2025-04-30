@@ -1,10 +1,13 @@
-import React from "react";
-
-export interface ButtonProps {
+interface ButtonProps {
   value: string;
 }
+
 const Button = ({ value }: ButtonProps) => {
-  return <button className=" cursor-pointer primary-btn h-10">{value}</button>;
+  return (
+    <button className="primary-btn disabled:bg-neutral-400 disabled:text-gray-300 disabled:cursor-not-allowed px-4 ">
+      {value}
+    </button>
+  );
 };
 
 export default Button;
