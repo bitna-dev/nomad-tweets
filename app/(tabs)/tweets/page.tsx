@@ -8,7 +8,7 @@ const getInitialTweet = async () => {
     select: {
       tweet: true,
       created_at: true,
-      Like: true,
+      likes: true,
       id: true,
     },
     take: 1,

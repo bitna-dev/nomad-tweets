@@ -18,8 +18,8 @@ const TabBar = () => {
         )}
         <span>Home</span>
       </Link>
-      <Link href="/tweet" className="flex flex-col items-center gap-px">
-        {pathname === "/tweet" ? (
+      <Link href="/tweets" className="flex flex-col items-center gap-px">
+        {pathname === "/tweets" ? (
           <HiMiniPaperAirplane className="w-7 h-7" />
         ) : (
           <HiOutlinePaperAirplane className="w-7 h-7" />

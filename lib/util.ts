@@ -1,7 +1,3 @@
-export const formatToWon = (price: number) => {
-  return price.toLocaleString("ko-KR");
-};
-
 export const formatToTimeAgo = (date: string) => {
   const now = new Date().getTime();
   const time = new Date(date).getTime();
