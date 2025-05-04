@@ -6,9 +6,10 @@ interface InputProps {
   type: string;
   placeholder: string;
   name: string;
-  required: boolean;
+  required?: boolean;
   errors?: string[];
   icon: string;
+  defaultValue?: string;
 }
 
 const Input = ({
@@ -18,6 +19,8 @@ const Input = ({
   required,
   errors = [],
   icon,
+  defaultValue = "",
+  ...rest
 }: InputProps) => {
   return (
     <div className="flex flex-col gap-2">
@@ -28,6 +31,8 @@ const Input = ({
           placeholder={placeholder}
           name={name}
           required={required}
+          defaultValue={defaultValue}
+          {...rest}
           className="border border-gray-200 h-12 rounded-3xl p-3 w-full focus:ring-2 focus:ring-gray-300 focus:ring-offset-2 outline-none focus:border-gray-300 pl-10 transition"
         />
       </div>

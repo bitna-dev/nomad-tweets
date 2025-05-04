@@ -10,6 +10,7 @@
     "test": "echo \"Run your tests here\" && exit 0"
   },
   "dependencies": {
+    "@prisma/client": "^6.7.0",
     "@types/bcrypt": "^5.0.2",
     "bcrypt": "^5.1.1",
     "iron-session": "^8.0.4",
