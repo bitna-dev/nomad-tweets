@@ -8,7 +8,6 @@ const publicOnlyURL: Routes = {
   "/": true,
   "/login": true,
   "/create-account": true,
-  "/sms": true,
 };
 export const middleware = async (request: NextRequest) => {
   const session = await getSession();
@@ -19,7 +18,7 @@ export const middleware = async (request: NextRequest) => {
     }
   } else {
     if (exists) {
-      return NextResponse.redirect(new URL("/products", request.url));
+      return NextResponse.redirect(new URL("/profile", request.url));
     }
   }
 };

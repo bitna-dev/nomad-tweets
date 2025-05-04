@@ -8,7 +8,7 @@ interface InputProps {
   name: string;
   required?: boolean;
   errors?: string[];
-  icon: string;
+  icon?: string;
   defaultValue?: string;
 }
 
@@ -18,7 +18,7 @@ const Input = ({
   name,
   required,
   errors = [],
-  icon,
+  icon = "",
   defaultValue = "",
   ...rest
 }: InputProps) => {
